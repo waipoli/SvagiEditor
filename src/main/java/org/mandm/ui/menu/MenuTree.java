@@ -16,14 +16,13 @@ public class MenuTree {
 
     JMenuItem ConfigureItem(String name) {
         var item = new JMenuItem(name);
-        item.setFont(new Font("sans-serif", Font.BOLD, 30));
-        item.setBackground(Color.ORANGE);
+        item.setFont(new Font("sans-serif", Font.BOLD, 40));
         return item;
     }
 
     JMenu ConfigureMenu(String name) {
         var item = new JMenu(name);
-        item.setFont(new Font("sans-serif", Font.BOLD, 30));
+        item.setFont(new Font("sans-serif", Font.BOLD, 40));
         return item;
     }
 
@@ -41,6 +40,7 @@ public class MenuTree {
 
     public JMenuBar build() {
         var menuBar = new JMenuBar();
+
         for (var next : root.nexts) {
             menuBar.add(dfs(next));
         }
