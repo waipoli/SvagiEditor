@@ -1,0 +1,18 @@
+"MenuItem":
+  "background": "#212121"
+  "selectionBackground": "#323232"
+  "foreground": "#FDC96A"
+  "selectionForeground": "#FDC96A"
+  "border": "null"
+"PopupMenu":
+  "background": "#212121"
+  "border": "null"
+"Menu":
+  "selectionBackground": "#323232"
+  "foreground": "#FDC96A"
+  "selectionForeground": "#FDC96A"
+  "border": "null"
+"MenuBar":
+  "background": "#212121"
+  "border": "null"
+

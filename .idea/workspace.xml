@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d23c686b-06ae-43fc-9b60-98da96c4099a" name="Changes" comment="First Commit">
+    <list default="true" id="d23c686b-06ae-43fc-9b60-98da96c4099a" name="Changes" comment="Create Theme loader">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mandm/helpers/casters/Caster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mandm/helpers/factory/FabricUIValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mandm/helpers/loaders/YAMLLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Theme.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mandm/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mandm/ui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mandm/ui/menu/MenuTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mandm/ui/menu/MenuTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTTP Request" />
         <option value="Class" />
       </list>
     </option>
@@ -39,16 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Project.color": "273811",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/maxim/IdeaProjects/SvagiEditor/src/main/java/org/mandm/ui/menu",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;273811&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/maxim/IdeaProjects/SvagiEditor/src/main/java/org/mandm/ui/menu&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/mandm/ui/menu" />
@@ -71,7 +76,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663348107608</updated>
-      <workItem from="1663348108823" duration="4238000" />
+      <workItem from="1663348108823" duration="5519000" />
+      <workItem from="1663358663771" duration="7742000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1663348671856</created>
@@ -80,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663348671856</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Commit&#10;Update Color Theme">
+      <created>1663353543427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663353543427</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="First Commit&#10;Update Color Theme" />
+    <MESSAGE value="Create Theme loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Theme loader" />
   </component>
 </project>

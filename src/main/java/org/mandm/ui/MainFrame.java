@@ -1,6 +1,9 @@
 package org.mandm.ui;
 
 
+import org.mandm.helpers.casters.Caster;
+import org.mandm.helpers.factory.FabricUIValues;
+import org.mandm.helpers.loaders.YAMLLoader;
 import org.mandm.ui.menu.MenuItem;
 import org.mandm.ui.menu.MenuTree;
 
@@ -28,25 +31,17 @@ public class MainFrame extends JFrame implements ActionListener {
         this.setVisible(true);
     }
 
+
     private void configureUIManager() {
-        UIManager.put("MenuItem.background", new Color(0x212121));
-        UIManager.put("MenuItem.selectionBackground", new Color(0x323232));
-        UIManager.put("MenuItem.foreground", new Color(0xFDC96A));
-        UIManager.put("MenuItem.selectionForeground", new Color(0xFDC96A));
-        UIManager.put("MenuItem.border",BorderFactory.createEmptyBorder());
-
-        UIManager.put("PopupMenu.background", new Color(0x212121));
-        UIManager.put("Menu.selectionBackground", new Color(0x323232));
-        UIManager.put("Menu.foreground", new Color(0xFDC96A));
-        UIManager.put("Menu.selectionForeground", new Color(0xFDC96A));
-        UIManager.put("PopupMenu.border",BorderFactory.createEmptyBorder());
-        UIManager.put("Menu.border",BorderFactory.createEmptyBorder());
-
-
-        UIManager.put("MenuBar.background", new Color(0x212121));
-        UIManager.put("MenuBar.border",BorderFactory.createEmptyBorder());
-
-
+        var data = YAMLLoader.load("src/main/resources/Theme.yaml");
+        for (var chapter : data.keySet()) {
+            var settingsList = Caster.fromObjectToMap(data.get(chapter));
+            for (var settingsName : settingsList.keySet()) {
+                String nameOfSettings = chapter + "." + settingsName;
+                String valueOfSettings = (String) settingsList.get(settingsName);
+                UIManager.put(nameOfSettings, FabricUIValues.creteUIObject((String) settingsName, valueOfSettings));
+            }
+        }
     }
 
     private void configureMenuBar() {
@@ -57,7 +52,7 @@ public class MainFrame extends JFrame implements ActionListener {
                                 .add("Project"))
                         .add("Open")
                         .add("Open Recent")
-                        .add("Close Project")
+                        .add("Exit")
                 );
         this.setJMenuBar(tree.build());
     }
